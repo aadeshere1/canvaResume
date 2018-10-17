@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Sanchez" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Resume Design using Flexbox</title>
+  <style>
+    html {
+      background-color: #ebeced;
+      padding: 0 1em;
+    }
+    body {
+      background-color: #fff;
+      margin: 1em auto;
+      max-width: 50em;
+    }
+    p, ul {
+      font-family: 'Sanchez', serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    :root {
+      --yellowish: #eeb14f;
+      --dark-purple: #263547;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: var(--dark-purple);
+      height: 150px;
+    }
+    .logo {
+      background: url('./rss.png') no-repeat;
+      width: 32px;
+      height: 32px;
+      margin: 20px;
+    }
+    .title-holder {
+      align-items: center;
+    }
+    .nama {
+      color: var(--yellowish);
+      font-family: 'Montserrat', serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .designare {
+      color: #ffffff;
+      font-family: 'Sanchez', serif;
+      text-transform: uppercase;
+    }
+    .content-body {
+      display: flex;
+      flex-direction: row;
+    }
+    .wrapper {
+      margin: 20px;
+    }
+    .section-left {
+      flex: 1;
+      background-color: var(--yellowish);
+    }
+    .section-left ul {
+      list-style: none;
+      margin-left: -40px;
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bold;
+      font-family: 'Montserrat', serif;
+      letter-spacing: 2px;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+    h4 {
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      font-size: 0.8em;
+      margin-top: -10px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .section-right {
+      flex: 2;
+    }
+    .section-right .wrapper {
+      margin-left: 50px;
+    }
+    .section-right ul {
+      margin-left: -20px;
+    }
+    .section-right h2 {
+      color: var(--yellowish);
+      font-weight: bold;
+    }
+    .gpa {
+      margin-top: -15px;
+    }
+    .footer {
+      background-color: var(--dark-purple);
+    }
+    .ps {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="title-holder">
+        <div class="nama">Aadesh Shrestha</div>
+        <div class="designare">Social Media Manager</div>
+      </div>
+    </div> <!-- end header -->
+
+    <div class="content-body">
+      <div class="section-left">
+        <div class="wrapper">
+          <div class="lists">
+            <h2>professional skills</h2>
+            <ul>
+              <li>SEO and Google analytics</li>
+              <li>social media strategy</li>
+              <li>marketing</li>
+              <li>web content developer</li>
+              <li>copywriting</li>
+              <li>corporate blogging</li>
+              <li>project management</li>
+              <li>layout design</li>
+              <li>photo editing</li>
+              <li>market research</li>
+            </ul>
+          </div>
+
+          <div class="lists">
+            <h2>Personal Skills</h2>
+            <ul>
+              <li>creative spirit</li>
+              <li>reliable and professional</li>
+              <li>organized</li>
+              <li>time management</li>
+              <li>team player</li>
+              <li>fast learner</li>
+              <li>motivated</li>
+            </ul>
+          </div>
+
+          <div class="lists">
+            <h2>contact</h2>
+            <p>P: +977 985122xxxx</p>
+            <p>E: aadeshere1@gmail.com</p>
+            <p>W: <a href="https://blog.aadeshshrestha.com.np/">blog.aadeshshrestha.com.np/</a></p>
+          </div>
+
+          <div class="lists">
+            <h2>social</h2>
+            <p>
+              <i class="fab fa-facebook-messenger"></i>
+              <span><a href="https://m.me/aadeshere1">aadeshere1</a></span><!-- facebook -->
+            </p>
+            <p>
+              <i class="fab fa-instagram"></i>
+              <span><a href="https://instagram.com/aadeshere1">aadeshere1</a></span><!-- instagram -->
+            </p>
+            <p>
+              <i class="fab fa-github-alt"></i>
+              <span><a href="https://github.com/aadeshere1">aadeshere1</a></span><!-- github -->
+            </p>
+          </div>
+
+        </div> <!-- end wrapper -->
+      </div> <!-- end section-left -->
+      <div class="section-right">
+        <div class="wrapper">
+          <div class="content">
+            <h2>about</h2>
+            <p>I am an experienced social media manager seeking a full-time position in the field of social media and marketing communications, where I can apply my knowledge and skills for continuous improvement.</p>
+          </div>
+
+          <div class="content">
+            <h2>work experience</h2>
+
+            <h3>social media producer</h3>
+            <h4>Red Media Company | Feb 2013 - Dec 2014</h4>
+            <ul>
+              <li>Managed social media accounts</li>
+              <li>Created social media graphics for daily postings</li>
+              <li>Increased social media following and clicks by 200%</li>
+            </ul>
+
+            <h3>communications intern</h3>
+            <h4>Red Media Interactive | Apr 2012 - Jan 2013</h4>
+            <ul>
+              <li>Developed a social media strategy to increase the following of the company website</li>
+              <li>Spearheaded a viral campaign for one of the company's new products</li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <h2>education</h2>
+            <h3>Bachelor of arts major in communication</h3>
+            <h4>University of Dundee  2009-2013</h4>
+            <h3 class="gpa">GPA 3.9</h3>
+          </div>
+
+          <div class="content">
+            <h2>awards</h2>
+            <h3>most outstanding social media producer</h3>
+            <h4>Red Media Company | Dec 2014</h4>
+
+            <h3>best intern</h3>
+            <h4>Rich Media Interactive, Jan 2013</h4>
+          </div>
+
+
+        </div>
+      </div> <!-- end section right -->
+    </div>
+
+    <div class="footer">
+      <p class="ps">PS: this is not my profile but you can contact me through all the given links or through email shown as above</p>
+    </div>
+  </div>
+</body>
+</html>
